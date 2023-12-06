@@ -15,9 +15,20 @@ void displayOnClock(int num){
     digitalWrite (num-2, LOW);
   }
 }
-void clearClock(int o){
+void clearClock(){
 	//TODO: Clear 12 LEDs on Clock
-  digitalWrite (o, LOW);
+  digitalWrite(0,LOW);
+  digitalWrite(1,LOW);
+  digitalWrite(2,LOW);
+  digitalWrite(3,LOW);
+  digitalWrite(4,LOW);
+  digitalWrite(5,LOW);
+  digitalWrite(6,LOW);
+  digitalWrite(7,LOW);
+  digitalWrite(8,LOW);
+  digitalWrite(9,LOW);
+  digitalWrite(10,LOW);
+  digitalWrite(11,LOW);
 }
 
 void loop()
@@ -27,5 +38,5 @@ void loop()
     displayOnClock(i + 1);
     delay(1000);
   }
-  clearClock(11);
+  clearClock();
 }
